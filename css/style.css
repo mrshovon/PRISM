@@ -2,12 +2,13 @@
     padding: 0%;
     margin: 0px;
 }
-
+/* Header + navbar */
 .head-tag{
   color: #0dbdf3;
   text-align: left;
   position: relative;
   left: 30px;
+  animation: move 25s infinite linear;
 }
 nav {
     display: flex;
@@ -63,7 +64,7 @@ nav {
   
   .dropdown-content a {
     display: block;
-    width: 85px;
+    width: 200px;
     padding: 10px;
     color: #333;
     text-decoration: none;
@@ -71,8 +72,11 @@ nav {
   }
   
   .dropdown-content a:hover {
-    background-color: #f2f2f2;
+    background-color: #555c64;
+    color: #f2f2f2;
   }
+  /* header + navbar ends */
+  /* footer */
   footer {
     background-color: #f2f2f2;
     padding: 30px 0;
@@ -131,6 +135,8 @@ nav {
     font-size: 14px;
     color: #666;
   }
+  /* footer */
+  /* Body main */
   .corosul-size{
     width: 800px;
     height: 500px;
@@ -166,6 +172,7 @@ nav {
   display: flex;
   justify-content: center;
  }
+ /* body main */
  /* form */
 .contact-form{
   background: #fff;
@@ -223,8 +230,13 @@ nav {
 .form-signup{
   border: 2px solid #0062cc;
 }
-
-@media only screen and (max-width: 700px) {
+/* form */
+@keyframes move{
+  from{left: -800px;}
+  to{left: 1300px;}
+  }
+/* responsive */
+@media only screen and (max-width: 500px) {
   .section {
     display: block;
     width: fit-content;
@@ -235,4 +247,16 @@ nav {
   .logo img{
     display: none;
   }
+  .corosul-size{
+    width: 300px;
+    height: 100px;
+  }
+  .footer-container {
+    display: grid;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 500px;
+    margin-left: 20px;
+  }
 }
+/* responsive */
