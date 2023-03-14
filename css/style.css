@@ -141,17 +141,45 @@ nav {
   }
   /* footer */
   /* Body main */
-  .corosul-size{
-    width: 800px;
-    height: 500px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    align-content: center;
+  /* Carousel */
+  .carousel-container {
     position: relative;
-    left: 23%;
-    
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
   }
+  
+  .carousel-slide {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .carousel-prev, .carousel-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel-prev {
+    left: 0;
+  }
+  
+  .carousel-next {
+    right: 0;
+  }
+  
+  
+  /* carousel */
   img{
     border-radius: 50px;
   }
@@ -267,31 +295,7 @@ nav {
     to{color: #021a34;}
     }
 /* animation */
-/* responsive */
-@media only screen and (max-width: 500px) {
-  .section {
-    display: block;
-    width: fit-content;
-  }
-  .nav-links{
-    display: none;
-  }
-  .logo img{
-    display: none;
-  }
-  .corosul-size{
-    width: 300px;
-    height: 100px;
-  }
-  .footer-container {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 500px;
-    margin-left: 20px;
-  }
-}
-/* responsive */
+
 /* ammenities */
 .amm label{
   margin-left: 5px;
@@ -351,3 +355,40 @@ button[type=submit]:hover {
   top: 120px;
 }
 /* search bar */
+/* responsive */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+ 
+}
+/* @media (max-width: 768px) {
+  .carousel-container {
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-container {
+    max-width: 300px;
+  }
+} */
+/* responsive */
