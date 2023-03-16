@@ -40,14 +40,12 @@
                 <li ><a href="index.html">Home</a></li>
                 <li ><a href="About-us.html">About Us</a></li>
                 <li ><a href="Contact-us.html">Contact Us</a></li>
-                <li >
-                  <a href="#">Services</a>
-                  <div class="dropdown-content">
-                    <a href="home-loan.html">Home-Loan</a>
-                    <a href="renovation.html">Renovation</a>
-                    <a href="Legal-services.html">Legal-Services</a>
-                  </div>
-                </li>
+                <li ><a onclick="myFunction3()" href="#">Services</a></li>
+                <div id="services" style="display: none">
+                  <li> <a href="home-loan.html">Home-Loan</a></li>
+                  <li><a href="renovation.html">Renovation</a></li>
+                  <li><a href="Legal-services.html">Legal-Services</a></li>
+                </div>
                 <li ><a href="sign-up.html">Sign Up</a></li>
                 <li><a href="login.html" >Login</a></li>
               </ul>
@@ -59,7 +57,7 @@
     <!-- nav-bar -->
     <!-- main -->
     <main style="height: 600px;">
-        <form method="post" style="margin-top: 100px; margin-left: 150px; width: 800px;">
+        <form method="post">
            <h3>Sign Up</h3>
            <div class="row">
                 <div class="col-md-6">
@@ -87,7 +85,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="form-group">
-                        <img style="margin-left: 100px;" src="images/sign-up.jpg" alt="">
+                        <img  class="hide" style="margin-left: 100px;" src="images/sign-up.jpg" alt="">
                     </div>
                 </div>
             </div>
