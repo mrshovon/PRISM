@@ -389,16 +389,22 @@ button[type=submit]:hover {
   height: 100vh;
   background-color: #acdceb;
   display: block !important;
+  padding-right: 10px;
 }
 .menu-items li a{
  
  text-decoration: none;
- color: #050505;
+ color: #000000;
  
 }
 .menu-items li a:hover{
-  background-color: #226bb9;
-  padding: 10px;
+  box-sizing: border-box;
+  background-color: #51667d;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  
+ 
+  ;
 }
 /* menu-bar view */
 /* responsive */
