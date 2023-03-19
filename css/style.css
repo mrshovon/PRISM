@@ -29,6 +29,9 @@ nav {
   width: 50px;
   height: 50px;
 }
+#services{
+  background-color: #0dbdf3;
+}
 .logo img {
   height: 55px;
 }
@@ -408,11 +411,16 @@ box-sizing: border-box;
 background-color: #51667d;
 border-radius: 5px;
 margin-bottom: 20px;
-
-
-;
 }
 /* menu-bar view */
+/* search results div */
+.search-main{
+  height: 150px;
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+/* search results div */
 /* responsive */
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {

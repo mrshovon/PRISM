@@ -1,9 +1,3 @@
-
-function myFunction() {
-    var element = document.getElementById("hidden");
-    element.classList.toggle("menu-items");
-  }
-
   function myFunction2() {
     var x = document.getElementById("hidden");
     if (x.style.display === "none") {
