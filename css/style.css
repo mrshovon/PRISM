@@ -312,16 +312,26 @@ to{left: 1300px;}
 
 /* property-details */
 .pdtls1{
-  border: 2px solid rgb(133, 23, 23);
+  /* border: 2px solid rgb(133, 23, 23); */
+  box-sizing: border-box;
   display: inline-flex;
-  margin: 30px;
+  margin: 20px;
+  width: 90%;
+  justify-items: center;
+}
+.pdtls2{
+  /* border: 3px solid #bbbdbf;
+  border-radius: 10px; */
+}
+.pdtls2 div{
+  margin-top: 5px;
 }
 .pdtls1 img{
-  border: 2px solid rgb(22, 2, 68);
+  /* border: 2px solid rgb(22, 2, 68); */
 }
 .pdtls1 p{
   box-sizing: border-box;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   width: 95%;
   margin-left: 25px;
 }
