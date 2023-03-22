@@ -20,7 +20,7 @@
     const sr = document.getElementById('searchResult');
     sr.innerHTML= '';
     for(i=1;i<=10;i++){
-      sr.innerHTML += `<div class="search-main" >
+      sr.innerHTML += `<div class="search-main animate__animated animate__fadeInLeft" >
         <div style="margin-left: 27px; margin-top: 9px;">
           <img src="https://www.timeoutdubai.com/cloud/timeoutdubai/2021/09/14/yvA5SpUH-IMG-Worlds-1200x900.jpg" alt="" style="width:200px; height: 180px; border-radius: 0px;"> 
         </div>
@@ -36,4 +36,49 @@
       </div>`;
     }
   }
+
+  function slidePrev(){
+    const img1 = document.getElementById('image1');
+    const img2 = document.getElementById('image2');
+    const img3 = document.getElementById('image3');
+
+  if(img1.style.display === "block"){
+    img1.style.display ="none";
+    img2.style.display ="none";
+    img3.style.display="block";
+  }
+  else if(img2.style.display === "block"){
+    img1.style.display ="block";
+    img2.style.display ="none";
+    img3.style.display="none";
+  }
+  else{
+    img1.style.display ="none";
+    img2.style.display ="block";
+    img3.style.display="none";
+  }
+}
+
+function slideNext(){
+  const img1 = document.getElementById('image1');
+  const img2 = document.getElementById('image2');
+  const img3 = document.getElementById('image3');
+
+if(img1.style.display === "block"){
+  img1.style.display ="none";
+  img2.style.display ="block";
+  img3.style.display="none";
+}
+else if(img2.style.display === "block"){
+  img1.style.display ="none";
+  img2.style.display ="none";
+  img3.style.display="block";
+}
+else{
+  img1.style.display ="block";
+  img2.style.display ="none";
+  img3.style.display="none";
+}
+}
+
 
