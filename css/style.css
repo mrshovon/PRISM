@@ -1,7 +1,10 @@
 *{
   padding: 0%;
   margin: 0px;
-  
+}
+body{
+  /* background-image: linear-gradient(rgb(139, 139, 238) , lightblue); */
+  height: fit-content;
 }
 /* sign-up */
 .signup{
@@ -17,13 +20,25 @@ margin: 2%;
 position: relative;
 /* animation: fadeInLeft 1s 1 ; */
 }
-nav {
-  display: flex;
+.navv {
+  display: inline-flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0px 1px 30px 0px #666;
+  position: sticky;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 9999;
+  top: 0;
+  /* background-color: #333; */
+  /* color: #fff */
+}
+.sticky{
+  position: fixed;
+  top:0;
+  background-color: #a2a2a2;
 }
 .menu-bar{
   display: none;
@@ -164,8 +179,8 @@ footer {
 /* Carousel */
 .carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 600px;
+  
+  max-width: 700px;
   margin: 0 auto;
 }
 
@@ -207,11 +222,12 @@ footer {
 
 /* carousel ends */
 img{
-  border-radius: 50px;
+  border-radius: 25px;
 }
 .section{
+  height: 100vh;
   display: inline-flex;
-  padding-top: 40px;
+  padding-top: 40;
   padding-left: 30px;
   padding-right: 30px;
   justify-content: center;
@@ -494,7 +510,7 @@ margin-bottom: 20px;
 main{
   height:  fit-content;
   box-sizing: border-box;
-  margin: 15px;
+  margin: 0px;
 }
 .head-tag{
   text-align: center;
@@ -507,8 +523,11 @@ main{
 }
 .section{
   display: block;
+  height: fit-content;
 }
-
+.btnn-right{
+  margin-left: 70%;
+  }
 
 .hide{
   display: none;

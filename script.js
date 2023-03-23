@@ -46,15 +46,21 @@
     img1.style.display ="none";
     img2.style.display ="none";
     img3.style.display="block";
+    img3.classList.add("animate__animated");
+    img3.classList.add("animate__flipInX");
   }
   else if(img2.style.display === "block"){
     img1.style.display ="block";
+    img1.classList.add("animate__animated");
+    img1.classList.add("animate__flipInX");
     img2.style.display ="none";
     img3.style.display="none";
   }
   else{
     img1.style.display ="none";
     img2.style.display ="block";
+    img2.classList.add("animate__animated");
+    img2.classList.add("animate__flipInX");
     img3.style.display="none";
   }
 }
@@ -67,18 +73,46 @@ function slideNext(){
 if(img1.style.display === "block"){
   img1.style.display ="none";
   img2.style.display ="block";
+  img2.classList.add("animate__animated");
+  img2.classList.add("animate__flipInX");
   img3.style.display="none";
 }
 else if(img2.style.display === "block"){
   img1.style.display ="none";
   img2.style.display ="none";
   img3.style.display="block";
+  img3.classList.add("animate__animated");
+  img3.classList.add("animate__flipInX");
 }
 else{
   img1.style.display ="block";
+  img1.classList.add("animate__animated");
+  img1.classList.add("animate__flipInX");
   img2.style.display ="none";
   img3.style.display="none";
 }
-}
 
+}
+// function loadNav(){
+//   const tag = document.getElementsByTagName("nav");
+//   tag[0].classList.add('navv');
+// }
+window.onload =function(){
+
+    const tag = document.getElementsByTagName("nav");
+    tag[0].classList.add('navv');
+  
+}
+window.onscroll = function() {
+  var navbar = document.querySelector('.navv');
+  if (window.pageYOffset > 50) {
+    navbar.classList.add('sticky');
+    navbar.classList.add('animate__animated');
+    navbar.classList.add('animate__slideInDown');
+  } else {
+    navbar.classList.remove('sticky');
+    navbar.classList.remove('animate__animated');
+    navbar.classList.remove('animate__slideInDown');
+  }
+};
 
